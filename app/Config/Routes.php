@@ -25,6 +25,16 @@ $routes->get('/dashboard/informe2', 'DashboardController::getInforme2');
 $routes->get('/dashboard/informe3', 'DashboardController::getInforme3');
 $routes->get('/dashboard/informe4', 'DashboardController::getInforme4');
 
+// Tarea 06 - Reportes Superhéroes
+$routes->get('/tarea06', 'Tarea06Controller::index');
+$routes->post('/tarea06/pdf', 'Tarea06Controller::generarPDF');
+$routes->post('/tarea06/grafico1', 'Tarea06Controller::generarGrafico1');
+$routes->get('/tarea06/grafico2', 'Tarea06Controller::generarGrafico2');
+$routes->get('/tarea06/api/generos', 'Tarea06Controller::apiGeneros');
+$routes->get('/tarea06/api/publishers', 'Tarea06Controller::apiPublishers');
+$routes->post('/tarea06/api/superheroes-genero', 'Tarea06Controller::apiSuperheroesPorGenero');
+$routes->get('/tarea06/api/peso-publisher', 'Tarea06Controller::apiPesoPublisher');
+
 //API
 $routes->get('/public/api/getdatainforme2', 'DashboardController::getDataInforme2');
 $routes->get('/public/api/getdatainforme3', 'DashboardController::getDataInforme3');
